@@ -1,0 +1,94 @@
+<%@page import="ops.Notice.Beans.*"%>
+<%@page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ page import="java.util.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>공지사항 조회</title>
+<style type="text/css">
+h2 {
+   text-align: center;
+}
+
+input{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+ }
+.sec{
+	width:120px;
+	margin:0 auto;
+}
+.bluetop {
+  border-collapse: collapse;
+  border-top: 3px solid gray;
+}  
+.bluetop th {
+  color: black;
+  background: #f2f2f2;
+}
+.bluetop th, .bluetop td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.bluetop th:first-child, .bluetop td:first-child {
+  border-left: 0;
+}
+.bluetop th:last-child, .bluetop td:last-child {
+  border-right: 0;
+}
+</style>
+</head>
+
+<body>
+	<form action="boardReply.no" method="post" >
+	<table class="bluetop" width="75%" align="center">
+   		
+        <colgroup>
+            <col width="15%">
+            <col width="35%">
+            <col width="15%">
+            <col width="*">
+        </colgroup>
+         
+        <tbody>
+            <tr>
+                <th>번호</th>
+                <td>${detail.board_no}</td>
+                <th>아이디</th>
+                <td>${detail.board_id}</td>
+            </tr>
+            <tr>
+                <th>제목</th>
+                <td>${detail.board_title}</td>
+                <th>작성일</th>
+                <td>${detail.board_date}</td>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <td colspan="3">
+                    ${detail.board_content}
+                </td>
+            </tr>
+        </tbody>
+   </table>
+   
+   <input type = "hidden" name = "board_no" value = "${detail.board_no}"/>
+   <center><input type="text" name = "reply"><input type = "submit" value="댓글달기"></center> 
+
+   
+   <div class="sec">
+   <input type = "button" value="수정" onclick="location.href='boardModify.no?board_no=${detail.board_no}'">
+   <input type = "button" value="삭제" onclick="location.href='boardDelete.no?board_no=${detail.board_no}'">
+   </div>
+   </form>
+</body>
+</html>

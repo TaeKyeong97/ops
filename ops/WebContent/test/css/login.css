@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*RESET*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap&subset=korean');
+*{margin:0; padding:0; font-family: 'Nanum Gothic', sans-serif;}
+html,body{width:100%; height:100%;}
+body{background-color:#f4f5fa;}
+a{color:#000; text-decoration:none;}
+li{list-style:none;}
+/*common*/
+:root{--logo_comm:url('../img/logo_comm.png') no-repeat;}
+section>h2{display:none;}
+
+/*header*/
+header{padding-top:10%;}
+header>h1>a{width:165px; height:69px; margin:0 auto; background:var(--logo_comm); display:block; background-position:-4px -3px; font-size:0;}
+.login-wrap{width:578px; margin:0 auto; margin-top:50px; margin-bottom:25px; overflow:hidden;}
+.login-wrap .login-con{width:507px; padding:12px 0; background:#fff; float:left;}
+.login-wrap .login-con>h3{padding:12px 0 28px 0; font-size:25px; text-align:center;}
+.login-wrap .login-con>form>input{width:446px; height:65px; margin:10px auto; padding:0 15px; display:block; border:1px solid #e6e8f7; font-size:15px;}
+.login-wrap .login-con>form>.login-btn{width:478px; border:0; font-size:18px; background:#ef3e36; color:#fff;}
+.login-change>button{width:70px; height:74px; font-size:13px; display:block; border:0; background:#e6e8f7;}
+.login-change>button.on{background:#ef3e36; color:#fff;}
+.login-change>button::before{width:25px; height:37px; margin:4px auto; content:''; background:var(--logo_comm); display:block; background-position:-4px -116px;}
+.side-con{width: 450px; margin: 0 auto;}
+.side-con>ul{float:right;}
+.side-con>ul>li{margin:0 1px; font-size:13px; float:left;}

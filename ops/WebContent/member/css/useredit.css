@@ -1,0 +1,104 @@
+body{
+    background-color:#f3f3f3;
+}
+@media (max-width:1920px){ /*1100px 이상부터 보여지는 화면(PC)*/
+    .content_wrap{
+        width:100%;
+        position:relative;
+        left:0;
+    }
+    .useredit{
+        width:40%;
+        position: relative;
+        margin:20px auto;
+        background-color: #fff;
+        border-radius: 1.5rem;
+    }
+    .ud_box1{padding:10px;}
+    .ud_box2{padding:10px;}
+    .ud_box3{padding:10px; position:relative;}
+    .ud1_img a{
+        display:inline-block;
+    }
+    .ud1_img a:focus{
+        box-shadow:3px 3px 5px rgba(0,0,0,0.4);
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+    }
+    .ud1_img{
+        margin:0 auto;
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+        border:1px solid #e3e3e3;
+        box-sizing:border-box; 
+        margin-top:50px;
+        margin-bottom:20px;
+    }
+    .ud_box1 img{
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+    }
+    .ud_box1 p{
+        text-align: center;
+    }
+    .ud1_name{
+        font-size:0.9rem;
+        line-height: 180%;
+    }
+    .ud1_id{
+        font-size:0.8rem;
+        margin-bottom:30px;
+    }
+    /**/
+    .ud_box2 p{
+        text-align:center;
+    }
+    .ud_box2 p:nth-child(1){
+        font-size:1.1em;
+        margin:50px 0 10px 0;
+        font-weight: bold;
+    }
+    .ud_box2 p:nth-child(2){
+        font-size:0.9em;
+        margin-bottom:30px;
+    }
+    .ud_box2 input{
+        width:60%;
+        font-size: 1.3em;
+        margin:0 auto;
+        display:block;
+        margin-bottom:50px;
+        padding:5px;
+    }
+    /**/
+    .ud_box3{
+        padding-bottom:65px;
+    }
+    .ud_box3 input:not(:last-child){
+        font-size:1em;
+        width:90%;
+        display: block;
+        margin:15px auto;
+        padding:8px;
+    }
+    .ud_box3 input:first-child{
+        margin-top:30px;
+    }
+    .ud_box3 input:last-child{
+        width:100%;
+        height:50px;
+        border:0;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        position:absolute;
+        bottom:0;
+        left:0;
+        background-color: #1c69f5;
+        color:#fff;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+}

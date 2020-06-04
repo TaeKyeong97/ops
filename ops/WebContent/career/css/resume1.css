@@ -1,0 +1,228 @@
+body{
+    background-color:#f3f3f3;
+}
+@media (max-width:1920px){ /*1100px 이상부터 보여지는 화면(PC)*/
+    .content_wrap{
+        width:100%;
+        position:relative;
+        left:0;
+    }
+    .resumepage{
+        width:50%;
+        margin:80px auto;
+        background-color: #fff;
+        padding:40px;
+        border:1px solid #ddd;
+        position:relative;
+    }
+    .resume_title{
+        margin-bottom:40px;
+        font-weight: bold;
+    }
+    .work_type{
+        width:80px;
+        height:80px;
+        color:#fff;
+        text-align:center;
+        position:absolute;
+        right:50px;
+        top:0;
+        background-color: #1c69f5;
+        line-height:85px;
+    }
+    .resume_thum{
+        width:120px;
+        height:150px;
+        border:1px solid #ddd;
+        overflow:hidden;
+        float:left;
+    }
+    .resume_thum img{
+        width:120px;
+        height:150px;
+    }
+    .resume_profile_1{
+        font-size:0.75rem;
+        display:inline-block;
+        margin-left:40px;
+        margin-top:15px;
+        margin-bottom:80px;
+    }
+    .resume_profile_1 li{
+        line-height:180%;
+    }
+    .resume_profile_1 li span{
+        font-weight: bold;
+    }
+    .resume_profile_1 li:first-child{
+        line-height:300%;
+        font-size:0.8rem;
+    }
+    .resume_profile_1 li:first-child span{
+        font-size:0.9rem;
+    }
+    .oneline{
+        display:block;
+        line-height:200%;
+        color:#888;
+        font-size:0.9rem;
+        width:100%;
+        border:0;
+        border-bottom:1px solid #ddd;
+        box-sizing: border-box;
+    }
+    h3{
+        font-size:1.1rem;
+        margin-top:40px;
+        margin-bottom:20px;
+        font-weight: bold;
+    }
+    .resume_profile_2{
+        width:100%;
+        background-color: #f9f9f9;
+        border:1px solid #e3e3e3;
+        box-sizing: border-box;
+    }
+    .resume_profile_2 ul{
+        display: inline-block;
+        width:24.3%;
+        margin: 20px 0;
+        text-align: center;
+        border-right:1px solid #c3c3c3;
+        box-sizing: border-box;
+    }
+    .resume_profile_2 ul li:first-child{
+        font-weight: bold;
+        margin-bottom:10px;
+        font-size:0.9rem;
+    }
+    .resume_profile_2 ul li:not(first-child){
+        font-size:0.8rem;
+    }
+    .resume_profile_2 ul:last-child{
+        border-right:0;
+    }
+    .abledate ul li{
+        display: inline-block;
+        border-radius: 100px;
+        border:1px solid #c8c8c8;
+        line-height:100%;
+        margin-right:5px;
+    }
+    .abledate ul li:nth-child(-n+7){
+        padding:15px;
+    }
+    .abd_blue{
+        color:#fff;
+        background-color:#1c69f5 !important;
+    }
+    .abledate ul li:nth-child(n+8){
+        font-size:0.8rem;
+        padding:10px;
+        background-color: #e3e3e3;
+    }
+    .h3_minitxt{
+        font-size: 0.8rem;
+        margin-left:10px;
+        color:#888;
+    }
+    /*profile테이블 default*/
+    .profile{
+        /*width:100%;*/
+        border:1px solid #e3e3e3;
+        border-top:0;
+        box-sizing: border-box;
+        overflow:hidden;
+    }
+    .profile ul{
+        /*width:100%;*/
+        overflow:hidden;
+        display: block;
+        /*width:25%; /*4칸*/
+        text-align: center;
+    }
+    .profile ul li{
+        height:29px;
+        padding:15px 15px;
+        word-wrap:break-word;
+        font-size: 0.9rem;
+        float:left;
+    }
+    .profile ul li:last-child{
+        border-right:0;
+    }
+    .profile ul:first-child li{
+        height:auto; /*글자 늘어남*/
+        font-weight: bold;
+        background-color: #f9f9f9;
+        border-top:2px solid #888;
+        border-bottom:1px solid #e3e3e3;
+        box-sizing: border-box;
+    }
+    .profile ul li:not(last-child){
+        height:auto;
+        min-height:48px;
+        border-right:1px solid #e3e3e3;
+        box-sizing: border-box;
+    }
+    /*profile테이블 default end*/
+    .pr3, .pr4{
+        width:100%;
+    }
+    .pr3 li{
+        width:17.5%;
+    }
+    .pr3 li:nth-child(3){
+        width:30%;
+    }
+    .pr4 li{
+        width:25%;
+    }
+    .pr5{
+        width:50%;
+    }
+    .pr5 li{
+        width:50%;
+    }
+    .resume_list{
+        width:100%;
+        border:1px solid #e3e3e3;
+        box-sizing: border-box;
+    }
+    .resume_list p:first-child{
+        float:left;
+        height:2rem;
+        width:50px;
+        text-align:center;
+        padding-top:14px;
+        font-size: 1.2rem;
+    }
+    .resume_link{
+        width:100%;
+        border:1px solid #e3e3e3;
+        box-sizing: border-box;
+    }
+    .resume_link img{
+        width:20px;
+        height:20px;
+        float:left;
+        padding:5px 18px 5px 13px;
+    }
+    .rsl{
+        border-bottom:0;
+        font-size:0.9rem;
+        padding:10px 10px;
+        line-height:200%;
+    }
+    .rsl:last-child{
+        border-bottom:1px solid #e3e3e3;
+    }
+    .rsl_tip{
+        float:right;
+        font-size:0.65rem;
+        margin-right:10px;
+        padding:0 10px;
+        background-color:#e3e3e3;
+        border-radius: 1rem;
+    }
+}

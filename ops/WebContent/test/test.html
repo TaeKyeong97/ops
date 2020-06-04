@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<script src="https://unpkg.com/vue"></script>
+		<title>test</title>
+	</head>
+	<body>
+		<div id="app">
+			<ul>
+				<li v-for="product in products">
+					<a v-bind:href="product.url">{{product.name}}</a>
+				</li>
+			</ul>
+	  </div>
+		<script>
+			const app = new Vue({
+				el:'#app',
+				data:{
+					products:[]
+				},
+				created(){
+					fetch('json/language-pack.json')
+					.then(response => response.json())
+					.then(json => {
+						this.products=json.products
+					})
+				}
+			})
+		</script>
+
+	</body>
+</html>

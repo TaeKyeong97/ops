@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-media.css">
+    <title>쇼핑번가</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script async src="js/language-pack.js"></script>
+
+
+    <style>
+    [v-cloak]::before {
+	  content: '로딩중...'
+	}
+    [v-cloak] > * {
+  display:none;
+}
+
+
+    </style>
+
+  </head>
+  <body onload="loaded();">
+<!--로딩-->
+<script>
+function loaded()//작동 시 아래 기능적용
+{
+document.all.lodinga.style.display = 'none';//ID로딩 (GIF이미지 및 문구) 없어져라!
+document.all.loding.style.opacity = '1';//ID wrap 생겨라!
+ }
+</script>
+<div id="lodinga" style="width:100%; top:0; position:absolute; z-index:2;">
+  <header>
+        <div class="head">
+          <a href="#" class="menu-btn">
+            <span style="height: 25px; background: #f4f5fa;border-radius: 6px;"></span>
+          </a>
+          <div class="head-con">
+            <h1><a href="#" class="" style="width: 81px;height: 26px;background: #f4f5fa; border-radius: 23px;margin-top: 9px;">쇼핑번가</a></h1>
+            <div class="search-wrap">
+              <form class="search" action="index.html" method="post">
+                <input type="text" name="q" value="" class="search-con">
+                <input type="submit" value="검색" class="search-btn ">
+              </form>
+            </div>
+          </div>
+          <div class="" style="width: 52px;margin-left: 15px;  float: left;">
+            <a href="#" v-on:click="langOpen =! langOpen" style="position: relative; ">
+      <div style="width: 32px;height: 20px;background: #f4f5fa;margin: 5px auto;"></div>
+      <span style="background: #f4f5fa;  width: 32px;  height: 12px;  display: block;"></span></a>
+          </div>
+          <!--로그인-->
+          <div class="login-wrap">
+            <a href="login/login.html"><span style="background: #f4f5fa; width: 67px; height: 15px;"></span><span style="background: #f4f5fa; width: 44px; height: 15px; margin: 4px 0px;"></span></a>
+          </div>
+          <!--장바구니-->
+          <a href="#s" class="shopping-btn"><span>장바구니</span></a>
+        </div>
+        <nav class="menu-wrap">
+          <ul class="menu-con">
+            <li style="margin-right: 0px;overflow: hidden;">
+              <a href="#" style="width: 20%;background: #f4f5fa;height: 0px;margin-top: 9px;"></a></li>
+            <li style="margin-right: 15px;overflow: hidden;"><a href="#" style="width: 20%; background: #f4f5fa; height: 0px;margin-top: 9px;"></a></li>
+            <li style="margin-right: 15px; overflow: hidden;"><a href="#" style="
+      width: 20%; background: #f4f5fa; height: 0px; margin-top: 9px; "></a></li>
+      <li><a href="#" style=" width: 20%; background: #f4f5fa; height: 0px; margin-top: 9px; "></a></li>
+      <li><a href="#" style=" width: 20%; background: #f4f5fa; height: 0px; margin-top: 9px; "></a></li>
+       <li><a href="#" style=" width: 20%; background: #f4f5fa; height: 0px; margin-top: 9px; "></a></li>
+       <li><a href="#" style=" width: 20%; background: #f4f5fa; height: 0px; margin-top: 9px; "></a></li>
+       <li><a href="#" style=" width: 20%; background: #f4f5fa; height: 0px; margin-top: 9px; "></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content"><aside class="banner-wrap"> <a href="#" class="banner-l" style="background: #dfe1ec;height: 100%;display: block;padding: 9% 0;"> </a> <div class="onair" style="position:relative;height:0;padding-bottom: 17.90%;background: #dfe1ec;height: 100%;display: block;padding: 9% 0;"> </div> </aside></div>
+</div>
+
+<!--로딩끝-->
+    <header id="loding" runat="server" style="position:relative; z-index:3; opacity:0;">
+      <div class="head">
+        <a href="#" class="menu-btn">메뉴
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="head-con">
+          <h1><a href="#" class="log">쇼핑번가</a></h1>
+          <div class="search-wrap">
+            <form class="search" action="index.html" method="post">
+              <input type="text" name="q" value="" class="search-con">
+              <input type="submit" value="검색" class="search-btn ">
+            </form>
+          </div>
+        </div>
+        <div id="lang-wrap" class="lang-wrap" v-cloak>
+          <a href="#" v-on:click="langOpen =! langOpen"><span>한국어</span></a>
+          <div class="lang-con" v-if="langOpen">
+            <ul>
+              <li v-for="product in products"><a v-bind:href="product.url">{{product.name}}</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--로그인-->
+        <div class="login-wrap">
+          <a href="login/login.html"><span>안녕하세요</span><span>로그인</span></a>
+        </div>
+        <!--장바구니-->
+        <a href="#s" class="shopping-btn"><span>장바구니</span></a>
+      </div>
+      <nav class="menu-wrap">
+        <ul class="menu-con">
+          <li><a href="#">TV쇼핑</a></li>
+          <li><a href="#">Shop+</a></li>
+          <li><a href="#">해피딜</a></li>
+          <li><a href="#">N푸드</a></li>
+          <li><a href="#">생활가전</a></li>
+          <li><a href="#">패션뷰티</a></li>
+          <li><a href="#">백화점</a></li>
+          <li><a href="#">이벤트</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--content-->
+    <div class="content">
+      <!--banner-->
+      <aside class="banner-wrap">
+        <a href="#" class="banner-l" style="background:#cdc4b9;"><img src="img/banner/2019-10-27banner01.png" alt="배너이미지"> </a>
+        <div class="onair" style="position:relative; height:0;  padding-bottom: 17.90%;">
+          <iframe style="position: absolute; width:100%; height:100%; border-radius:5px; max-height:291px; min-height:149px;" src="https://www.youtube-nocookie.com/embed/FrFzVlEK3VU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </aside>
+      <section>
+        <h2>지금뜨는 상품</h2>
+        <article class="product-con">
+          <h3>지금뜨는 <span style="color:rgb(228, 13, 54); font-weight:bold;">#SSD</span> 상품</h3>
+          <div class="product-lists">
+            <div class="product-list">
+              <a href="#" class="productImg"><img src="img/upload/2440372488_B.jpg" alt=""></a>
+              <a href="#" class="productTitle">삼성 PRO SSD500GB 240G</a>
+              <a href="#" class="productPrice">23,900원</a>
+            </div>
+            <div class="product-list">
+              <a href="#" class="productImg"><img src="img/upload/1840492361_B.jpg" alt=""></a>
+              <a href="#" class="productTitle">리뷰안 900G SSD240GB 240G</a>
+              <a href="#" class="productPrice">33,900원</a>
+            </div>
+            <div class="product-list">
+              <a href="#" class="productImg"><img src="img/upload/1628223618_B.jpg" alt=""></a>
+              <a href="#" class="productTitle">리뷰안 900G SSD240GB 240G</a>
+              <a href="#" class="productPrice">33,900원</a>
+            </div>
+            <div class="product-list">
+              <a href="#" class="productImg"><img src="img/upload/2440372488_B.jpg" alt=""></a>
+              <a href="#" class="productTitle">리뷰안 900G SSD240GB 240G</a>
+              <a href="#" class="productPrice">37,900원</a>
+            </div>
+            <div class="product-list">
+              <a href="#" class="productImg"><img src="img/upload/2440372488_B.jpg" alt=""></a>
+              <a href="#" class="productTitle">리뷰안 900G SSD240GB 240G</a>
+              <a href="#" class="productPrice">33,900원</a>
+            </div>
+            <div class="product-list">
+              <a href="#" class="productImg"><img src="img/upload/2440372488_B.jpg" alt=""></a>
+              <a href="#" class="productTitle">리뷰안 900G SSD240GB 240G</a>
+              <a href="#" class="productPrice">103,900원</a>
+            </div>
+            <div class="product-list">
+              <a href="#" class="productImg"><img src="img/upload/2440372488_B.jpg" alt=""></a>
+              <a href="#" class="productTitle">리뷰안 900G SSD240GB 240G</a>
+              <a href="#" class="productPrice">33,900원</a>
+            </div>
+
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

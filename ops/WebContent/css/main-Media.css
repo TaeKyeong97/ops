@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@media (max-width:796px ) {
+  /*sub head*/
+  #header5 .header_con .header_wrap .logo_con{margin:0 17px 0 32px;}
+  #header5{min-width:auto; background:#fff;}
+  #header5>.header_con>.header_wrap{width:100%;}
+  #header5>.header_con>.header_wrap>.logo_con>a>.opsLogo{width:48px; height:47px; background-size:350px;}
+  #header5>.header_con>.header_wrap>.sech_wrap>.search>.sech_con{box-shadow:0px 2px 6px 2px #dddddf;}
+  #header5>.header_con>.header_wrap>.sech_wrap{width:54%;}
+  #header5>.header_con>#gnb{display:none;}
+  #header5>.header_con>.cqu_icon{display:none;}
+  /*career*/
+  .car-content{width:100% !important; margin:0 auto; float:none !important;}
+  .openWrap{min-width:auto !important;}
+  .portf-side-wrap{min-width:294px !important;}
+  .portf-side-wrap .portf-body .portf-content .portf-img{width:99% !important;}
+  .portf-side-wrap .portf-body .portf-content .title{width:45% !important;}
+  .portf-side-wrap .portf-body .portf-content .cate{width:35% !important;}
+  .portf-side-wrap .portf-body .portf-content{height:200px !important;}
+  .portfolio-add-wrap .ops-con .ops-add-con>a:nth-child(3){width:30%;}
+}
+@media (max-width:1225px ) {
+  .list_Portf{grid-template-columns:auto auto; grid-gap:10px;}
+}

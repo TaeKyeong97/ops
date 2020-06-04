@@ -1,0 +1,49 @@
+body{
+    background-color:#eeeff3;
+}
+@media (max-width:1920px){ /*1100px 이상부터 보여지는 화면(PC)*/
+    .content_wrap{
+        width:100%;
+        position:relative;
+        left:0;
+    }
+    .qna_wrap{
+        width:60%;
+        height:auto;
+        position: relative;
+        margin:0 auto;
+        margin-bottom:100px;
+        background-color: #fff;
+        /*border:1px solid #c9c9c9;*/
+        box-sizing: border-box;
+    }
+    .outtext{
+        width:60%;
+        height:1.5em;
+        margin:0 auto;
+        position:relative;
+        font-size:1em;
+        margin-top:50px;
+        margin-bottom:20px;
+    }
+    .title_txt{
+        font-size:22px;
+        margin-left:15px;
+    }
+    .qna_ul li{
+        padding:14px 20px 14px 20px;
+        font-size:14px;
+    }
+    .qna_li span{
+        margin-right:21px;
+        font-size:20px;
+    }
+    .qna_li:nth-child(2){
+        background-color: #f3f3f3;
+        border:1px solid #dedeef;
+        border-top:0;
+        box-sizing: border-box;
+        display:none;
+    }
+   
+}
