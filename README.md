@@ -39,6 +39,8 @@
 
 # 주요기능
 
-Copy-paste this into your markdown content, and that's it. Simple!
+- OPS(Open Portfolio Service) 구직자 취업을 할 수 있도록 포트폴리오와 이력서 작성부터 원하는 공고에 지원 하기까지 취업에 관련된 모든 것 관리해 주는 취업지원 지원 사이트입니다.
+
+
 
 # 데모이미지
