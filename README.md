@@ -21,9 +21,9 @@
 <p align="center">
     <a href="#demo">View Demo</a>
     ·
-    <a href="#go">Report Bug</a>
+    <a href="https://github.com/TaeKyeong97/ops/issues/new">Report Bug</a>
     ·
-    <a href="#go">Request Feature</a>
+    <a href="https://github.com/TaeKyeong97/ops/issues/new">Request Feature</a>
 </p>
  <p align="center">
     <a href="/readme_kr.md">한국어</a>
