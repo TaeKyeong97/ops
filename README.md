@@ -2,4 +2,9 @@ ops
 ===
 
 취업연계 플랫폼
-[![solved.ac tier](http://mazassumnida.wtf/api/generate_badge?boj=TaeKyeong97)](https://solved.ac/TaeKyeong97)
+
+<p align="center">
+ <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats" />
+ <h2 align="center">GitHub Readme Stats</h2>
+ <p align="center">OPS 취업연계 플랫폼</p>
+</p>
