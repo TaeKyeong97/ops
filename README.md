@@ -35,10 +35,10 @@
 # 목차
 
 - [주요기능](#주요기능)
-- [데모 이미지](#데모이미지)
+- [데모이미지](#데모이미지)
 
 # 주요기능
 
 Copy-paste this into your markdown content, and that's it. Simple!
 
-# 데모 이미지
+# 데모이미지
