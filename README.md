@@ -32,14 +32,10 @@
  </p>
 
 
-# Features
+# 목차
 
-- [GitHub Stats Card](#github-stats-card)
-- [GitHub Extra Pins](#github-extra-pins)
-- [Top Languages Card](#top-languages-card)
-- [Wakatime Week Stats](#wakatime-week-stats)
-- [Themes](#themes)
-- [Customization](#customization)
-- [Deploy Yourself](#deploy-on-your-own-vercel-instance)
+- [주요기능](#주요기능)
 
-# GitHub Stats Card
+# 주요기능
+
+Copy-paste this into your markdown content, and that's it. Simple!
