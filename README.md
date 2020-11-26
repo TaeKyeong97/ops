@@ -56,3 +56,15 @@
 
 
 # 데모이미지
+<img width="100px" src="OPS표지이미지.jpg" align="center" alt="ops표지 이미지" />
+
+#### [메인 페이지]
+![메인이미지](./status/ops-main.png)
+
+#### [검색 결과 페이지]
+![검색결과페이지](./status/ops-search.png)
+
+#### [이력서 작성 페이지]
+![이력서 작성 페이지](./status/ops-resume.png)
+
+
