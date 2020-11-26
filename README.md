@@ -56,7 +56,7 @@
 
 
 # 데모이미지
-<img width="100px" src="https://raw.githubusercontent.com/TaeKyeong97/ops/master/status/img/ops.jpg" align="center" alt="ops표지 이미지" />
+<img width="600px; margin:0 auto;" src="https://raw.githubusercontent.com/TaeKyeong97/ops/master/status/img/ops.jpg" align="center" alt="ops표지 이미지" />
 
 #### [메인 페이지]
 ![메인이미지](https://raw.githubusercontent.com/TaeKyeong97/ops/master/status/img/ops-main.png)
