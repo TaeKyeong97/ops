@@ -26,7 +26,7 @@
     <a href="https://github.com/TaeKyeong97/ops/issues/new">Request Feature</a>
 </p>
  <p align="center">
-    <a href="/readme.md">한국어</a>
+    <a href="./README.md">한국어</a>
     .
     <a href="/docs/readme_us.md">English</a>
  </p>
